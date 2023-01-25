@@ -1,1 +1,1 @@
-alert ("Este é um pequeno easter egg que eu coloquei :>")
+alert ("Um pequeno easter egg que eu coloquei :>")
