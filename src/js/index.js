@@ -4,6 +4,7 @@ const video = document.getElementById("video");
 const modal = document.querySelector(".modal");
 const linkDoVideo = video.src;
 let alertaCasa = document.querySelector(".home-menu");
+var clicouCasa = 0
 
 
 function alternarModal () {
@@ -20,5 +21,12 @@ botaoFecharModal.addEventListener("click", () => {
 });
 
 alertaCasa.addEventListener("click", () => {
-        alert ("Um pequeno easter egg que eu coloquei :>")
+    clicouCasa = clicouCasa + 1
+    if (clicouCasa >= 3)
+        alert ("Um pequeno easter egg que eu coloquei :>");
+})
+
+alertaCasa.addEventListener("click", () => {
+    if (clicouCasa >= 3)
+    window.open("backup.html","_self") 
 })
